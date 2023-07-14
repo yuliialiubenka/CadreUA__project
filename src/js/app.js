@@ -1,0 +1,10 @@
+import * as flsFunctions from "./modules/functions.js";
+import * as modalFunctions from "./modules/functions.js";
+import * as mobileMenuFunctions from "./modules/functions.js";
+import * as smoothScrollFunction from "./modules/functions.js";
+import * as toTopArrowFunction from "./modules/functions.js";
+flsFunctions.isWebp();
+modalFunctions.openModals();
+mobileMenuFunctions.mobileMenu();
+smoothScrollFunction.smoothScroll();
+toTopArrowFunction.scrollToTop();

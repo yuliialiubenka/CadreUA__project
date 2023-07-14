@@ -1,0 +1,93 @@
+.btn {
+    padding: 8px 32px;
+    border: 1px solid $blue-main;
+    background: $blue-main;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    cursor: pointer;
+    border-radius: 30px;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.10);
+    color: $white;
+    transition: box-shadow 0.25s ease-in-out;
+
+    & a {
+        color: inherit;
+    }
+
+    &.blue {
+        background: $blue-light;
+        border-color: $blue-light;
+    }
+
+    &.yellow {
+        color: $blue-dark;
+        border-color: $yellow;
+        background: $yellow;
+    }
+
+    &.transparent {
+        background: transparent;
+        color: $blue-main;
+    }
+
+    &.blue-main {
+        background: $blue-main;
+        border-color: $blue-main;
+    }
+
+    &.white {
+        background: transparent;
+        border: 2px solid $white;
+    }
+
+    &.disabled {
+        background: $disabled;
+        border-color: $disabled;
+    }
+
+    &:hover, &:focus, &:active {
+        box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.40);
+    }
+
+    &.header-section__button {
+        &.transparent {
+            padding: 0 32px;
+            & a {
+                padding: 8px 0;
+            }
+        }
+    }
+
+    &.about-system-section__button {
+        padding: 0;
+        & a {
+            padding: 8px 32px;
+            display: block;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .btn {
+        padding: 7px 16px;
+
+        &.header-section__button {
+            min-width: calc((100% - 16px) / 2);
+            
+            &.transparent {
+                padding: 0 16px;
+                & a {
+                    padding: 7px 0;
+                }
+            }
+        }
+    
+        &.about-system-section__button {
+            padding: 0;
+            & a {
+                padding: 7px 16px;
+            }
+        }
+    }
+}

@@ -1,0 +1,277 @@
+.tariff-section {
+    & .col-12 {
+        padding: 0 12px;
+    }
+
+    & .row {
+        padding: 0 3px;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        background-color: $white;
+        border-radius: 15px;
+        box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.10);
+        padding: 12px;
+        position: relative;
+        overflow: hidden;
+
+        &.individual {
+            &:before {
+                content: "";
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 85px;
+                height: 80px;
+                display: block;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-image: url("data:image/svg+xml,%3Csvg width='85' height='80' viewBox='0 0 85 80' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_d_962_122518)'%3E%3Ccircle cx='66' cy='14' r='58' fill='%232641B2'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_d_962_122518' x='0' y='-52' width='132' height='132' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/%3E%3CfeOffset/%3E%3CfeGaussianBlur stdDeviation='4'/%3E%3CfeComposite in2='hardAlpha' operator='out'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0'/%3E%3CfeBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow_962_122518'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow_962_122518' result='shape'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E");
+            }
+    
+            &:after {
+                content: "";
+                position: absolute;
+                top: 8px;
+                right: 8px;
+                width: 44px;
+                height: 44px; 
+                display: block;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-image: url("data:image/svg+xml,%3Csvg width='44' height='44' viewBox='0 0 44 44' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.9993 40.3334C32.1246 40.3334 40.3327 32.1253 40.3327 22.0001C40.3327 11.8749 32.1246 3.66675 21.9993 3.66675C11.8741 3.66675 3.66602 11.8749 3.66602 22.0001C3.66602 32.1253 11.8741 40.3334 21.9993 40.3334Z' stroke='%23FBD437' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M22 14.6667V22.0001' stroke='%23FBD437' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M22 29.3333H22.0175' stroke='%23FBD437' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+            }
+        }
+            
+        &-title {
+            color: $blue-main;
+            background: $yellow;
+            border-radius: 10px;
+            box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.10);
+            padding: 10px;
+        }
+
+        &-list {
+            display: grid;
+            gap: 8px;
+
+            & li {
+                margin-left: 16px;
+                display: flex;
+                align-items: center;
+
+                &:before {
+                    content: '';
+                    width: 16px;
+                    height: 16px;
+                    display: inline-block;
+                    background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_962_122235)'%3E%3Cpath d='M8.00065 14.6666C11.6827 14.6666 14.6673 11.6819 14.6673 7.99992C14.6673 4.31792 11.6827 1.33325 8.00065 1.33325C4.31865 1.33325 1.33398 4.31792 1.33398 7.99992C1.33398 11.6819 4.31865 14.6666 8.00065 14.6666Z' stroke='%232641B2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M6 8.00008L7.33333 9.33341L10 6.66675' stroke='%232641B2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_962_122235'%3E%3Crect width='16' height='16' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    margin-right: 4px;
+                }
+            }
+        }
+
+        &-text {
+            & p + p {
+                margin-top: 20px;
+            }
+        }
+
+        &-price {
+            & .nav {
+                &-tabs {
+                    border-bottom: 0;
+                    transform: translateY(8px);
+                    position: relative;
+                    z-index: 1;
+
+                    &:after {
+                        content: "";
+                        display: inline-block;
+                        height: 7px;
+                        width: calc((100% / 3) + 2px);
+                        background: $white;
+                        position: absolute;
+                        z-index: 2;
+                        left: calc((100% / 3) - 1px);
+                        bottom: 0;
+                    }
+                }
+
+                &-item {
+                    width: calc(100% / 3);
+                }
+
+                &-link {
+                    padding: 6px 0 14px 0;
+                    text-align: center;
+                    color: $black;
+                    border-radius: 8px 8px 0 0;
+
+                    &:hover {
+                        border-color: transparent;
+                    }
+                    &.active {
+                        color: $black;
+                        border: 1px solid $yellow;
+                        border-bottom: 0;
+                    }
+                }
+            }
+
+            & .tab-content {
+                min-height: 202px;
+                padding: 8px;
+                border-radius: 10px;
+                border: 1px solid $yellow;
+                background-color: $white;
+                filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.10));
+                
+                &__price-card {
+                    border-radius: 10px;
+                    border: 2px solid #FFF3B5;
+                    background: $yellow-light;
+                    padding-bottom: 8px;
+
+                    &-head {
+                        border-radius: 10px 10px 0px 0px; 
+                        background: #FFF3B5;
+                        padding: 1px 8px 3px 8px;
+                        font-size: 12px;
+                        display: flex;
+                        justify-content: space-between;
+                        &-title {
+                            color: $blue-main;
+                        }
+
+                        &-percent {
+                            color: $white;
+                            border-radius: 5px;
+                            background: #00AD11;
+                            padding: 1px 4px;
+                        }
+                    }
+
+                    &-body {
+                        padding-top: 7px;
+                        text-align: center;
+
+                        & span {
+                            color: $red;
+                            font-size: 10px;
+                            position: relative;
+                            display: inline-block;
+                            transform: translate(10px);
+
+                            &::before {
+                                position: absolute;
+                                content: "";
+                                display: inline-block;
+                                width: 42px;
+                                height: 0.5px;
+                                background: $red;
+                                top: 50%;
+                                left: -2px;
+                                transform: rotate(10deg);                           
+                            }
+                        }
+                    }
+
+                    &.dark {
+                        margin-top: 8px;
+                        background: #FDE586;
+                        border-color: $yellow;
+                        padding-bottom: 18px;
+
+                        & .tab-content__price-card-head {
+                            background: #FFF3B5;
+                            background: $yellow;
+                        }
+    
+                        & .tab-content__price-card-body {
+                            color: $blue-main;
+                            padding-top: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__phone {
+        &-wrapper {
+            border-radius: 20px;
+            background: $blue-main;
+            padding: 24px;
+            margin-top: 60px;
+            color: $white;
+            text-align: center; 
+        }
+
+        &-link {
+            color: $yellow;
+            font-size: 24px;
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            margin-top: 24px;
+            gap: 4px;
+
+            &:hover {
+                color: $yellow;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1300px) {
+    .tariff-section__card.individual {
+        .tariff-section__card-title {
+            padding: 6px 70px 6px 10px;
+        }
+
+        &:before {
+            right: -10px;
+            top: -4px;
+        }
+
+        &:after {
+            width: 38px;
+            height: 38px;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .tariff-section {
+        &__card {
+            &-list {
+                & li {
+                    margin-left: 0;
+                }
+            }
+
+            & .nav-item {
+                font-size: 12px;
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width: 992px) {
+    .tariff-section {
+        &__card {
+            & .nav-item {
+                font-size: 16px;
+            }
+        }
+    }
+    
+}

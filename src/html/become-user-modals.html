@@ -1,0 +1,72 @@
+<!-- <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered user-agreement-modal" role="document">
+        <div class="modal-content user-agreement-modal__wrapper">
+            <span class="user-agreement-modal__img">
+                <svg class="user-agreement-modal__icon" width="24" height="24">
+                    <use href="./img/icons.svg#attention"></use>
+                </svg>
+            </span>
+            <strong class="user-agreement-modal__text">Перш ніж заповнити форму реєстрації, ознайомтеся з умовами
+                <a class="user-agreement-modal__link" href="#" target="_blank">угоди користувача</a>
+            </strong>
+            <button class="btn blue-main w-100 js-open-modal" data-dismiss="modal" data-modal="2">Зареєструватися</button>
+        </div>	   
+    </div>
+</div> -->
+
+<div class="private-modal registration-modal" data-modal="2">
+    <button class="js-modal-close btn-modal-close" type="button">
+      <svg class="close-icon" width="24" height="24">
+        <path d="M18 6 6 18M6 6l12 12" stroke="#2641B2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+    <div class="registration-modal__wrapper">
+        <form action="" class="registration-modal__form">
+            <h3 class="registration-modal__form-title">Введіть особисті дані</h3>
+            <p class="registration-modal__form-subtitle mt-2 mb-3">І наш менеджер зв’яжеться з Вами</p>
+            <div class="registration-modal__form-field">
+                <label class="registration-modal__label w-100 mb-1" for="user-surname">Прізвище</label>
+                <input class="registration-modal__input w-100 mb-3" placeholder="Прізвище" type="text" name="user-surname" minlength="2" required/>
+            </div>
+            <div class="registration-modal__form-field">
+                <label class="registration-modal__label w-100 mb-1" for="user-name">Ім’я</label>
+                <input class="registration-modal__input w-100 mb-3" placeholder="Ім’я" type="text" name="user-name" minlength="2" required/>
+            </div> 
+            <div class="registration-modal__form-field">
+                <label class="registration-modal__label w-100 mb-1" for="user-name">Email</label>
+                <input class="registration-modal__input w-100 mb-3" placeholder="Email" type="email" name="user-name" minlength="2" required pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"/>
+            </div>
+            <div class="registration-modal__form-field">
+                <label class="registration-modal__label w-100 mb-1" for="user-phone">Номер телефону</label>
+                <input class="registration-modal__input w-100 mb-3" placeholder="+380__" type="tel" name="user-phone" minlength="12" required pattern="(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?"/>                            
+            </div>
+            <label class="registration-modal__label mb-3" for="privacy-policy">
+                <input type="checkbox" name="privacy-policy" class="registration-modal__checkbox" id="privacy-policy" required>
+                <span class="registration-modal__consent d-flex">
+                    <svg class="registration-modal__icon checkbox" width="10" height="8">
+                        <use href="./img/icons.svg#checked"></use>
+                    </svg>
+                    <span>
+                        <span>Згода на обробку персональних даних та згода з </span><a href="#" target="_blank">умовами</a><span> угоди користувача</span>                    
+                    </span>
+                </span>
+            </label>
+            <button class="btn registration-modal__btn w-100" type="submit">Замовити</button>
+            <button class="btn transparent registration-modal__btn w-100 mt-3 js-modal-close" type="reset">Скасувати</button>
+        </form>
+    </div>			
+</div>
+
+<!-- При успішній відправці форми додати клас .active до .private-modal та .overlay-->
+
+<div class="private-modal success-modal">
+    <div class="success-modal__wrapper">
+        <span class="user-agreement-modal__img">
+            <svg class="user-agreement-modal__icon" width="24" height="24">
+                <use href="./img/icons.svg#success"></use>
+            </svg>
+        </span>
+        <h4 class="success-modal__title">Ваш запит успішно надіслано!</h4>
+        <p class="success-modal__text">Чекайте на дзвінок</p>
+    </div>			
+</div>

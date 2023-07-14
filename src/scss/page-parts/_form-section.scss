@@ -1,0 +1,64 @@
+.form-section {
+    padding-bottom: 80px;
+    
+    .col-12 {
+        padding: 0 12px;
+    }
+
+    .row {
+        padding: 0 3px;
+    }
+
+    &__img {
+        border-radius: 30px;
+        object-fit: cover;
+        height: 100%;
+        object-position: center;
+    }
+
+    &__form {
+        color: $white;
+        background: linear-gradient(155deg, #2641B2 0%, #1B42E5 100%);
+        box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.10);
+        padding: 40px;
+        border-radius: 30px; 
+    }
+
+    &__input {
+        border-radius: 30px;
+        border: 2px solid $very-light-blue;
+        background: $white;
+        color: $disabled;
+        padding: 7px 16px;
+
+        &::placeholder {
+            color: $disabled;
+        }
+    }
+
+    &__label {
+        padding-left: 16px;
+        font-size: 12px;
+        line-height: 1.25;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .form-section {  
+        &__form {
+            padding: 24px 16px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .form-section {  
+        &__form {
+            padding: 24px 16px;
+        }
+
+        &__img {
+            max-height: 212px;
+        }
+    }
+}

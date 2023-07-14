@@ -1,0 +1,353 @@
+.overlay {
+    opacity: 0;
+    visibility: hidden;
+  
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 20;
+    transition: 0.3s all;
+}
+
+.private-modal {
+    opacity: 0;
+    visibility: hidden;
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 30; 
+    background-color: var(--white);
+    border-radius: 30px;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.10); 
+    height: fit-content;
+    max-height: 100%;
+    overflow-y: auto;
+}
+
+.private-modal.active,
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.btn-modal-close {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    padding: 0; 
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+
+    &:hover {
+        & .close-icon path {
+            stroke: $blue-dark;
+        }
+    }
+}
+  
+.close-icon {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+// Banner
+.banner-modal {
+    width: 100%;
+    max-width: 973px;
+    height: min-content;
+
+    .btn-modal-close {
+        top: 25px;
+        right: 40px;
+    }
+
+    &__wrapper {
+        border-radius: 30px;
+        background: $yellow;
+        box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.10);
+    }
+
+    &__img {
+        width: 50%;
+        position: relative;
+        &::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: 0;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: left;
+            background-image: url(../img/banner-img-shadow.png);
+        }
+        & img  {
+            max-width: 270px;
+            object-fit: contain;
+            position: center;
+            position: relative;
+            z-index: 1;
+        }
+    }
+
+    &__form {
+        &-wrapper {
+            padding: 25px 30px 25px 40px;
+            height: min-content;
+            width: 50%;
+        }
+    }
+
+    &__title {
+        color: $blue-main;
+    }
+
+    &__desc {
+        max-width: 435px;
+    }
+
+    &__input {
+        border-radius: 30px;
+        border: 2px solid $very-light-blue;
+        background: $white;
+        padding: 7px 16px;
+
+        &::placeholder {
+            font-size: 16px;
+            color: $black;
+        }
+    }
+}
+
+// User agreement
+.user-agreement-modal {
+    width: 100%;
+    max-width: 408px;
+    height: min-content;
+    border-radius: 30px;
+
+    &__wrapper {
+        background: $very-light-blue;
+        box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.10);
+        padding: 24px;
+        display: grid;
+        gap: 16px;
+        text-align: center;
+        border-radius: 30px;
+    }
+
+    &__text {
+        color: $blue-main;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 136.523%;
+        max-width: 340px;
+        margin: auto;
+    }
+
+    &__link {
+        text-decoration: underline;
+        display: block;
+        color: $blue-main;
+    }
+
+    &__img {
+        height: 24px;
+    }
+}
+
+// Registration
+.registration-modal {
+    width: 100%;
+    max-width: 408px;
+
+    & .btn-modal-close {
+        top: 26px;
+        right: 24px;
+    }
+
+    &__wrapper {
+        padding: 24px;
+        border-radius: 30px;
+        background: $white;
+    }
+
+    &__form {
+        &-title, &-subtitle {
+            color: $blue-main;
+        }
+    }
+
+    &__input {
+        padding: 7px 16px;
+        border-radius: 30px;
+        border: 2px solid $very-light-blue;
+        background: $white;
+
+        &::placeholder {
+            color: $black;
+            font-size: 16px;
+        }
+    }
+
+    &__label {
+        font-size: 12px;
+        color: $disabled;
+        padding-left: 16px;
+
+        &[for=privacy-policy] {
+            padding-left: 0;
+            position: relative;
+            color: $black;
+        }
+    }
+    
+    &__checkbox {
+        position: absolute;
+        opacity: 0;
+        width: 100%;
+        height: 50%;
+        cursor: pointer;
+
+        &:checked + span .registration-modal__icon.checkbox {
+            fill: $blue-main;
+            transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    }
+    
+    &__icon.checkbox {
+        display: block;
+        margin: 3px 8px 0 1px;
+        height: 15px;
+        width: 15px;
+        border-radius: 2px;
+        padding: 4px 3px;
+        border: 1px solid $blue-main;
+        fill: none;
+        flex-shrink: 0;
+        z-index: 10;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__consent {
+        & a {
+            color: $blue-main;
+
+            &:hover, &:active, &:focus {
+                text-decoration: underline;
+            }
+        }
+    }
+
+}
+
+.success-modal {
+    width: 100%;
+    max-width: 408px;
+    height: min-content;
+    border-radius: 30px;
+
+    &__wrapper {
+        background: $very-light-green;
+        box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.10);
+        padding: 24px;
+        display: grid;
+        gap: 16px;
+        text-align: center;
+        border-radius: 30px;
+    }
+
+    &__title {
+        color: $green;
+    }
+
+    &__img {
+        height: 24px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .banner-modal {
+        max-width: 758px;
+
+        .btn-modal-close {
+            top: 24px;
+            right: 24px;
+        }
+
+        &__form {
+            &-wrapper {
+                padding: 22px 0 22px 24px;
+            }
+        }
+
+        &__img {
+            & img  {
+                max-width: 284px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .banner-modal {
+        max-width: 410px;
+        width: calc(100% - 30px);
+        border-radius: 20px; 
+
+        &__wrapper {
+            border-radius: 20px;
+        }
+
+        &__form {
+            &-wrapper {
+                padding: 24px;
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        &__img {
+            width: 100%;
+            padding-top: 24px;
+            & img  {
+                max-width: 123px;
+            }
+
+            &::after {
+                display: none;
+            }
+        }
+    }
+
+    .user-agreement-modal {
+        width: calc(100% - 30px);
+
+        &.modal {
+            &-dialog {
+                margin: auto;
+            }
+        }
+    }
+
+    .registration-modal {
+        width: calc(100% - 30px);
+    }
+
+    .success-modal {
+        width: calc(100% - 30px);
+    }
+}

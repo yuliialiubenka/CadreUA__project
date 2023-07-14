@@ -1,0 +1,13 @@
+.header {
+    background: $blue-main;
+}
+
+@media screen and (max-width: 1200px) {
+    .header {
+        &__logo {
+            & img {
+                max-height: 28px;
+            }
+        }
+    }
+}

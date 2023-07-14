@@ -1,0 +1,93 @@
+<header class="header" id="header">
+    <div class="container header__container">
+      <div class="row header__navigation">
+        <div class="col-12 d-flex justify-content-between align-items-center">
+          <a class="header__logo" href="./about-system.html">
+            <img src="./img/logo-white.svg" alt="Logo">
+          </a>
+          <div class="d-none d-md-flex">
+            <ul class="header__menu d-flex">
+              <li class="header__menu-item about-system-block"><a class="header__menu-item-link" href="#system-content">Про систему</a></li>
+              <li class="header__menu-item about-system-page"><a class="header__menu-item-link" href="./about-system.html">Про систему</a></li>
+              <li class="header__menu-item"><a class="header__menu-item-link" href="./consultation.html">Про консультації</a></li>
+              <li class="header__menu-item"><a class="header__menu-item-link" href="./about-tariffs.html">Тарифи</a></li>
+              <li class="header__menu-item"><a class="header__menu-item-link" href="#faq">Найчастіше питають</a></li>
+              <li class="header__menu-item"><a class="header__menu-item-link" href="#contacts">Контакти</a></li>
+            </ul>
+          </div>
+          <div class="d-none d-md-block">
+            <button class="header__button btn yellow js-open-modal" data-modal="2" type="button">Запит на консультацію</button>
+          </div>
+          <div class="header-mobile__buttons d-flex d-md-none">
+              <button class="header__button btn blue mr-3 js-open-modal" id="toBecomeUser" data-modal="2" type="button">Стати користувачем</button>
+              <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu" type="button">
+                <svg class="menu-toggle-icon" width="24" height="24">
+                  <use href="./img/icons.svg#menu"></use>
+                </svg>
+              </button>
+              <button class="mobile-close-btn menu-toggle js-close-menu" type="button">
+                <svg class="mobile-close-icon" width="24" height="24">
+                  <use href="./img/icons.svg#close-white"></use>
+                </svg>
+              </button>
+          </div>
+        </div>
+      </div>
+    </div>
+</header>
+
+  <!--Mobile Menu-->
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <ul class="mobile-menu list">
+      <li class="mobile-menu-item about-system-block"><a class="mobile-menu-item-link" href="#system-content">Про систему</a></li>
+      <li class="mobile-menu-item about-system-page"><a class="mobile-menu-item-link" href="#system-content">Про систему</a></li>
+      <li class="mobile-menu-item"><a class="mobile-menu-item-link" href="./consultation.html">Про консультації</a></li>
+      <li class="mobile-menu-item"><a class="mobile-menu-item-link" href="./about-tariffs.html">Тарифи</a></li>
+      <li class="mobile-menu-item"><a class="mobile-menu-item-link" href="#faq">Найчастіше питають</a></li>
+      <li class="mobile-menu-item d-block">
+        <div class="dropdown">
+          <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Контакти
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item phone" href="tel:0800219977">
+              <svg class="mobile-menu__icon" width="16" height="16">
+                <use href="./img/icons.svg#phone-icon-white"></use>
+              </svg>
+            0 (800) 219 - 977
+            </a>
+            <a class="dropdown-item email" href="mailto:system@kadry-ua.com">
+              <svg class="mobile-menu__icon" width="16" height="16">
+                  <use href="./img/icons.svg#email"></use>
+              </svg>
+              system@kadry-ua.com
+            </a>
+            <div class="dropdown-item social-networks">
+              <a href="https://www.facebook.com/kadrovik.ua/" class="social-networks-link" target="_blank">
+                  <svg class="social-networks__icon" width="24" height="24">
+                      <use href="./img/icons.svg#facebook"></use>
+                  </svg>
+              </a>
+              <a href="https://www.instagram.com/kadrovik.ua/" class="social-networks-link" target="_blank">
+                  <svg class="social-networks__icon" width="24" height="24">
+                      <use href="./img/icons.svg#instagram"></use>
+                  </svg>
+              </a>
+              <a href="https://www.youtube.com/channel/UCtOoId1CyNjBA6UXbe30ppg/videos" class="social-networks-link" target="_blank">
+                  <svg class="social-networks__icon" width="24" height="24">
+                      <use href="./img/icons.svg#youtube"></use>
+                  </svg>
+              </a>
+              <a href="https://t.me/dkkadrovikua" class="social-networks-link" target="_blank">
+                  <svg class="social-networks__icon" width="24" height="24">
+                      <use href="./img/icons.svg#telegram-dark"></use>
+                  </svg>
+              </a>
+            </div>
+            <a class="dropdown-item underline" href="#">Служба підтримки 24/7</a>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <button class="mobile-menu__button btn yellow w-100 js-open-modal" type="button" data-modal="2">Запит на консультацію</button>
+  </div>

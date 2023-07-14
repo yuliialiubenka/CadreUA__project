@@ -1,0 +1,45 @@
+<section class="section form-section">
+    <div class="container form-section__container">
+        <div class="row flex-md-row-reverse">
+            <div class="col-12 col-md-6 mb-4 mb-md-0">
+                <img class="form-section__img w-100" src="./img/form-section-img.png" width="660" alt="Залишити заявку">
+            </div>
+            <div class="col-12 col-md-6">
+                <form action="" class="form-section__form">
+                    <div class="row">
+                        <div class="col-12 mb-3 text-center text-md-left">
+                            <h3>Залиште заявку і ми вам підберемо пакет зі знижкою!</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-6 form-section__form-field">
+                            <label class="form-section__label w-100 mb-1" for="user-surname">Прізвище</label>
+                            <input class="form-section__input w-100 mb-3" placeholder="Прізвище" type="text" name="user-surname" minlength="2" required/>
+                        </div>
+                        <div class="col-12 col-md-6 form-section__form-field">
+                            <label class="form-section__label w-100 mb-1" for="user-name">Ім’я</label>
+                            <input class="form-section__input w-100 mb-3" placeholder="Ім’я" type="text" name="user-name" minlength="2" required/>
+                        </div>                    
+                    </div>
+                    <div class="row">
+                        <div class="col-12 form-section__form-field">
+                            <label class="form-section__label w-100 mb-1" for="user-name">Email</label>
+                            <input class="form-section__input w-100 mb-3" placeholder="Email" type="email" name="user-email" minlength="2" required pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 form-section__form-field">
+                            <label class="form-section__label w-100 mb-1" for="user-phone">Номер телефону</label>
+                            <input class="form-section__input w-100 mb-3" placeholder="+380__" type="tel" name="user-phone" minlength="12" required pattern="(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?"/>                            
+                        </div>                    
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <button class="btn form-section__btn white w-100" type="submit">Замовити</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

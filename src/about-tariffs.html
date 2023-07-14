@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/head.html',{
+	"title":"Про тарифи"
+	})
+	<body class="landing about-tariffs">
+		@@include('html/preloader.html',{})
+		@@include('html/landings-header.html',{})
+		<main class="main">
+            @@include('html/header-section.html',{})
+			@@include('html/tariff-section.html',{})
+			<section class="section multiple-access-section">
+				<div class="container multiple-access-section__container">
+					<div class="row">
+						<div class="col-12 col-md-6 mb-4 mb-md-0">
+							<div class="multiple-access-section__wrapper">
+								<h2 class="multiple-access-section__title">Потрібно декілька доступів до <span>СИСТЕМИ?</span></h2>
+								<img class="multiple-access-section__img d-none d-md-block" width="347" src="./img/big-arrow.svg" alt="Стрілка">
+								<img class="multiple-access-section__img d-block d-md-none" width="257" src="./img/big-arrow-mobile.svg" alt="Стрілка">
+							</div>
+						</div>
+						<div class="col-12 col-md-6">
+							<form action="" class="multiple-access-section__form">
+								<div class="row">
+									<div class="col-12 mb-3">
+										<h3 class="multiple-access-section__form-title">Заповнюйте заявку і ми з вами зв’яжемося:</h3>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-12 col-xl-6 prxl-2 multiple-access-section__form-field">
+										<label class="multiple-access-section__label w-100 mb-1" for="user-surname">Прізвище</label>
+										<input class="multiple-access-section__input w-100 mb-3" placeholder="Прізвище" type="text" name="user-surname" minlength="2" required/>
+									</div>
+									<div class="col-12 col-xl-6 pl-xl-2 multiple-access-section__form-field">
+										<label class="multiple-access-section__label w-100 mb-1" for="user-name">Ім’я</label>
+										<input class="multiple-access-section__input w-100 mb-3" placeholder="Ім’я" type="text" name="user-name" minlength="2" required/>
+									</div>                    
+								</div>
+								<div class="row">
+									<div class="col-12 col-xl-6 pr-xl-2 multiple-access-section__form-field">
+										<label class="multiple-access-section__label w-100 mb-1" for="user-name">Email</label>
+										<input class="multiple-access-section__input w-100 mb-3" placeholder="Email" type="email" name="user-name" minlength="2" required pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"/>
+									</div>
+									<div class="col-12 col-xl-6 pl-xl-2 multiple-access-section__form-field">
+										<label class="multiple-access-section__label w-100 mb-1" for="user-phone">Номер телефону</label>
+										<input class="multiple-access-section__input w-100 mb-3" placeholder="+380__" type="tel" name="user-phone" minlength="12" required pattern="(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?"/>                            
+									</div>  
+								</div>
+								<div class="row">
+									<div class="col-12">
+										<button class="btn multiple-access-section__btn w-100" type="submit">Підтвердити</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section about-system-section">
+				<div class="container about-system-section__container">
+					<div class="row ">
+						<div class="about-system-section__top col-12 d-flex justify-content-between align-items-center">
+							<h2>Про систему</h2>
+							<button class="btn transparent about-system-section__button"><a href="./about-system.html">Детальніше</a></button>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 col-xl-4">
+							<div class="about-system-section__desc">
+								<p>Система «Кадри.UA» створена Групою компаній «МЕДІА-ПРО» за участі проєкту «КАДРОВИК.UA», Всеукраїнської асоціації кадровиків та залученням кадровиків-практиків.</p>
+								<p>Система забезпечує вирішення всіх питань у трудовому законодавстві для працівників кадрових служб, служб персоналу та юридичних відділів.</p>
+								<p>Система працює 24/7 та доступна кожному користувачу за наявності доступу до інтернету.</p>
+								<p>Користувачів системи «Кадри.UA» консультують кращі спеціалісти у сфері трудового законодавства, представники державних органів, юристи та кадровики-практики.</p>
+							</div>
+						</div>
+						<div class="col-12 col-xl-8">
+							<div class="about-system-section__wrapper d-none d-md-block mt-2 mt-xl-0">
+								<img class="about-system-section__img w-100" src="./img/about-system-section-img.png" width="990" alt="Кращі спеціалісти">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section banner-section">
+				<div class="container banner-section__container">
+					<div class="row">
+						<div class="col-12">
+							<div class="banner-section__wrapper">
+								<div class="row d-md-flex flex-md-row-reverse">
+									<div class="col-md-7 col-xl-6 d-none d-md-flex justify-content-center">
+										<img src="./img/banner-img.png" width="507" alt="Листи">
+									</div>
+									<div class="col-12 d-flex d-md-none justify-content-center mt-4">
+										<img src="./img/modal-banner-img.png" width="122" alt="Листи">
+									</div>
+									<div class="col-12 col-md-5 col-xl-6">
+										<div class="banner-section__form-wrapper text-center text-md-left">
+											<h2 class="banner-section__title mb-3">Отримай БЕЗКОШТОВНИЙ доступ до системи на 2 дні!</h2>
+											<p class="banner-section__desc mb-3">В даному доступі для вас всі розділи системи та документи для перегляду та прочитання.</p>
+											<form action="" class="banner-section__form">
+												<div class="banner-section__form-field">
+													<input class="banner-section__input w-100 mb-3" placeholder="Email" type="email" name="user-name" minlength="2" required pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"/>
+												</div>
+												<button class="btn banner-section__btn transparent w-100" type="submit">Замовити</button>
+											</form>
+										</div>
+									</div>
+								</div>	
+							</div>			
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section faq-section" id="faq">
+				<div class="container faq-section__container">
+					<div class="row">
+						<div class="col-12">
+							<h2 class="faq-section__title">Найчастіше питають</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 col-md-6">
+							<div id="accordion" class="faq-section__accordion">
+								<div class="faq-section__card">
+								  <div class="faq-section__card-header" id="heading1">
+									  <h4 class="faq-section__question" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+										Як швидко надають відповіді експерти системи?
+									  </h4>
+								  </div>                
+								  <div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#accordion">
+									<div class="faq-section__card-body">
+										Відповідь на стандартні запитання ви отримаєте від однієї години до однієї доби. Складні запитання, що потребують обговорення експертів чи звернень до державних структур, надсилаються протягом 3 днів, про що ви будете попереджені додатково.
+									</div>
+								  </div>
+								</div>
+								<div class="faq-section__card">
+								  <div class="faq-section__card-header" id="heading2">
+									  <h4 class="faq-section__question collapsed" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+										Чи є у системі ДКХП та Класифікатор професій?
+									  </h4>
+								  </div>
+								  <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordion">
+									<div class="faq-section__card-body">
+										Відповідь на стандартні запитання ви отримаєте від однієї години до однієї доби. Складні запитання, що потребують обговорення експертів чи звернень до державних структур, надсилаються протягом 3 днів, про що ви будете попереджені додатково.
+									</div>
+								  </div>
+								</div>
+								<div class="faq-section__card">
+								  <div class="faq-section__card-header" id="heading3">
+									  <h4 class="faq-section__question collapsed" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+										Які калькулятори є в системі?
+									  </h4>
+								  </div>
+								  <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordion">
+									<div class="faq-section__card-body">
+										У системі є 12 калькуляторів для підрахунків: днів щорічної відпуску, тривалості щорічної додаткової відпустки, календарних днів компенсації за щорічну відпустку, робочих місць осіб з інвалідністю, календарних днів у періоді, кількості штатних одиниць, стажу роботи на підприємстві, розрахунку закінчення відпустки, строків зберігання документів
+									</div>
+								  </div>
+								</div>
+								<div class="faq-section__card">
+									<div class="faq-section__card-header" id="heading4">
+										<h4 class="faq-section__question collapsed" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+											Чи можна змінювати пароль в системі на свій власний?
+										</h4>
+									</div>                
+									<div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordion">
+									  <div class="faq-section__card-body">
+											Відповідь на стандартні запитання ви отримаєте від однієї години до однієї доби. Складні запитання, що потребують обговорення експертів чи звернень до державних структур, надсилаються протягом 3 днів, про що ви будете попереджені додатково.
+									  </div>
+									</div>
+								</div>
+								<div class="faq-section__card">
+									<div class="faq-section__card-header" id="heading5">
+										<h4 class="faq-section__question collapsed" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse9">
+											Яку кількість запитань можна поставити експерту протягом місяця?
+										</h4>
+									</div>                
+									<div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordion">
+									  <div class="faq-section__card-body">
+											Відповідь на стандартні запитання ви отримаєте від однієї години до однієї доби. Складні запитання, що потребують обговорення експертів чи звернень до державних структур, надсилаються протягом 3 днів, про що ви будете попереджені додатково.
+									  </div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-md-6">
+							<div id="accordion2" class="faq-section__accordion">
+								<div class="faq-section__card">
+									<div class="faq-section__card-header" id="heading6">
+										<h4 class="faq-section__question collapsed" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+											Якщо в мене закінчився доступ до системи, чи буду я мати доступ до своїх збережених матеріалів у власному кабінеті?
+										</h4>
+									</div>
+									<div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#accordion2">
+									  <div class="faq-section__card-body">
+										  Відповідь на стандартні запитання ви отримаєте від однієї години до однієї доби. Складні запитання, що потребують обговорення експертів чи звернень до державних структур, надсилаються протягом 3 днів, про що ви будете попереджені додатково.
+									  </div>
+									</div>
+								</div>
+								<div class="faq-section__card">
+									<div class="faq-section__card-header" id="heading7">
+										<h4 class="faq-section__question collapsed" data-toggle="collapse" data-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+											Як я буду отримувати відповіді на запитання від експерта?
+										</h4>
+									</div>
+									<div id="collapse7" class="collapse" aria-labelledby="heading7" data-parent="#accordion2">
+										<div class="faq-section__card-body">
+											У системі є 12 калькуляторів для підрахунків: днів щорічної відпуску, тривалості щорічної додаткової відпустки, календарних днів компенсації за щорічну відпустку, робочих місць осіб з інвалідністю, календарних днів у періоді, кількості штатних одиниць, стажу роботи на підприємстві, розрахунку закінчення відпустки, строків зберігання документів
+										</div>
+									</div>
+								</div>
+								<div class="faq-section__card">
+									<div class="faq-section__card-header" id="heading8">
+										<h4 class="faq-section__question collapsed" data-toggle="collapse" data-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+											Чи можуть під одним доступом до системи одночасно заходити декілька працівників?
+										</h4>
+									</div>
+									<div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#accordion2">
+									  <div class="faq-section__card-body">
+										  Відповідь на стандартні запитання ви отримаєте від однієї години до однієї доби. Складні запитання, що потребують обговорення експертів чи звернень до державних структур, надсилаються протягом 3 днів, про що ви будете попереджені додатково.
+									  </div>
+									</div>
+								</div>
+								<div class="faq-section__card">
+									<div class="faq-section__card-header" id="heading9">
+										<h4 class="faq-section__question collapsed" data-toggle="collapse" data-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+											Якщо не вдалось знайти певний зразок документа в системі, як діяти?
+										</h4>
+									</div>
+									<div id="collapse9" class="collapse" aria-labelledby="heading9" data-parent="#accordion2">
+									  <div class="faq-section__card-body">
+											Відповідь на стандартні запитання ви отримаєте від однієї години до однієї доби. Складні запитання, що потребують обговорення експертів чи звернень до державних структур, надсилаються протягом 3 днів, про що ви будете попереджені додатково.
+									  </div>
+									</div>
+								</div>
+								<div class="faq-section__card">
+									<div class="faq-section__card-header" id="heading10">
+										<h4 class="faq-section__question collapsed" data-toggle="collapse" data-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+											Чи можу я купити доступ лише до певних розділів системи?
+										</h4>
+									</div>
+									<div id="collapse10" class="collapse" aria-labelledby="heading10" data-parent="#accordion2">
+									  <div class="faq-section__card-body">
+										  Відповідь на стандартні запитання ви отримаєте від однієї години до однієї доби. Складні запитання, що потребують обговорення експертів чи звернень до державних структур, надсилаються протягом 3 днів, про що ви будете попереджені додатково.
+									  </div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			@@include('html/form-section.html',{})
+		</main>
+		@@include('html/footer.html',{})
+		@@include('html/to-top-arrow.html',{})
+		@@include('html/become-user-modals.html',{})
+		@@include('html/banner-modal.html',{})
+		<div class="overlay js-overlay-modal"></div>
+
+		@@include('html/script-links.html',{})
+		<script src="js/app.min.js"></script>
+	</body>
+</html>

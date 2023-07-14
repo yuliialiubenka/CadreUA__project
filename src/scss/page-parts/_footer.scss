@@ -1,0 +1,123 @@
+.footer {
+    padding-top: 60px;
+    background-color: $blue-main;
+    color: $white;
+
+    &__wrapper {
+        gap: 24px;
+        padding-bottom: 60px;
+    }
+
+    &__wrap {
+        border-radius: 10px; 
+        background: #3852C0; 
+        padding: 16px;
+        height: 100%;
+        min-width: 29%;
+    }
+
+    &__social-networks {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+
+        &-link {
+            display: block;
+            width: max-content;
+            height: 100%;
+        }
+    }
+
+    &__link {
+        color: $white;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        transition: color 0.25s ease-in-out;
+
+        &:hover, &:focus, &:active {
+            color: $yellow;
+        }
+
+        &.phone {
+            color: $yellow;
+            margin: 12px 0 12px 0;
+            transition: text-decoration 0.25s ease-in-out;
+
+            &:hover, &:focus, &:active {
+                text-decoration: underline;
+            } 
+        }
+
+        &.email, &.map-link {
+            color: $very-light-blue;
+            margin-bottom: 12px;
+            transition: text-decoration 0.25s ease-in-out;
+
+            &:hover, &:focus, &:active {
+                text-decoration: underline;
+            } 
+        }
+
+        &.underline {
+            text-decoration: underline;
+        }
+    }
+
+    &__icon {
+        display: block;
+        flex-shrink: 0;
+    }
+
+    &-bottom {
+        background-color: $blue-dark;
+        padding: 9px 0;
+
+        &__wrapper {
+            gap: 24px;
+        }
+
+        &__link, &__text {
+            font-size: 12px;
+            color: $white;
+        }
+        &__link {
+            transition: color 0.25s ease-in-out;
+            &:hover, &:focus, &:active {
+                color: $yellow;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer {    
+        &__wrapper {
+            gap: 40px;
+            flex-direction: column;
+        }
+    
+        &__wrap {
+            height: auto;
+            width: 100%;
+
+            &:nth-child(2), &:nth-child(3) {
+                background: transparent;
+            }
+        }
+    
+        &-bottom {
+            background-color: $blue-dark;
+            padding: 9px 0;
+    
+            &__wrapper {
+                &:nth-child(2) {
+                    border-radius: 10px;
+                    background: $blue-main;
+                    padding: 8px 16px;
+                    margin-top: 12px;
+                }
+            }
+        }
+    }
+}

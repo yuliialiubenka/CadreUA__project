@@ -1,0 +1,247 @@
+.issues-section {
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+
+        & li {
+            display: inline-flex;
+            align-items: center;
+
+            &:before {
+                content: '';
+                width: 16px;
+                height: 16px;
+                display: inline-block;
+                background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_962_122235)'%3E%3Cpath d='M8.00065 14.6666C11.6827 14.6666 14.6673 11.6819 14.6673 7.99992C14.6673 4.31792 11.6827 1.33325 8.00065 1.33325C4.31865 1.33325 1.33398 4.31792 1.33398 7.99992C1.33398 11.6819 4.31865 14.6666 8.00065 14.6666Z' stroke='%232641B2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M6 8.00008L7.33333 9.33341L10 6.66675' stroke='%232641B2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_962_122235'%3E%3Crect width='16' height='16' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+                background-size: contain;
+                background-repeat: no-repeat;
+                margin-right: 8px;
+            }
+        }
+    }
+
+    &__title {
+        color: $blue-main;
+    }
+
+    &__cards {
+        height: 732px;
+        width: 100%;
+        display: grid;
+        column-gap: 24px;
+        row-gap: 24px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+        grid-template-areas:
+        "A A A A A A B B B C C C" 
+        "A A A A A A B B B C C C" 
+        "A A A A A A B B B C C C"
+        "D D D E E E G G G C C C"
+        "D D D E E E G G G C C C"
+        "D D D E E E G G G C C C"
+        "F F F E E E H H H I I I"
+        "F F F E E E H H H I I I"
+        "F F F E E E H H H I I I";
+    }
+
+    &__card {
+        border-radius: 15px;
+        padding: 16px;
+        display: flex;
+        align-items: end;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        color: $white;
+
+        &:nth-child(1) {
+            grid-area: A;
+            background: $blue-main;
+        }
+
+        &:nth-child(2) {
+            grid-area: B;
+            background-image: url(../img/issues-section-img-2.png);
+        }
+
+        &:nth-child(3) {
+            grid-area: C;
+            background-image: url(../img/issues-section-img-3.png);
+        }
+
+        &:nth-child(4) {
+            grid-area: D;
+            background-image: url(../img/issues-section-img-4.png);
+        }
+
+        &:nth-child(5) {
+            grid-area: E;
+            background-image: url(../img/issues-section-img-6.png);
+        }
+
+        &:nth-child(6) {
+            grid-area: F;
+            background-image: url(../img/issues-section-img-5.png);
+        }
+
+        &:nth-child(7) {
+            grid-area: G;
+            background-image: url(../img/issues-section-img-7.png);
+        }
+
+        &:nth-child(8) {
+            grid-area: H;
+            background: $blue-main;
+        }
+
+        &:nth-child(9) {
+            grid-area: I;
+            background-image: url(../img/issues-section-img-9.png);
+        }
+    }
+}
+
+.customers-section {
+    &__title {
+        color: $blue-main;
+    }
+
+    &__cards {
+        padding: 0 3px;
+
+        &-wrap {
+            padding: 0 12px;
+        }
+    }
+
+    &__card {
+        background: $yellow;
+        border-radius: 20px;
+        box-shadow: 0px 0px 8px 0px rgba(58, 81, 204, 0.04);
+        padding: 30px 54px;
+        text-align: center;
+        min-height: 166px;
+        height: 100%;
+        position: relative;
+
+        &:hover {
+            & .customers-section__card-overlay {
+                width: 100%;
+                height: 100%;
+                border-radius: 20px;
+                left: 0;
+                top: 0;
+            }
+
+            & .customers-section__card-title {
+                color: $white;
+            }
+        }
+
+        &-overlay {
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            background: $blue-main;
+            box-shadow: 0px 0px 8px 0px rgba(58, 81, 204, 0.04);
+            position: absolute;
+            left: calc(50% - 26px);
+            top: 30px;
+            transition: width 0.25s ease-in-out, border-radius 0.25s ease-in-out, left 0.25s ease-in-out;
+        }
+
+        &-icon {
+            position: relative;
+            margin-top: 10px;
+        }
+
+        &-title {
+            margin-top: 26px;
+            color: $blue-main;
+            position: relative;
+            transition: color 0.25s ease-in-out;
+        }
+    }
+}
+
+.access-section {
+    &__wrapper {
+        background-color: $white;
+        border-radius: 20px;
+        padding: 32px 0;
+        box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.10);
+    }
+
+    &__title {
+        max-width: 411px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .issues-section {
+        &__cards {
+            column-gap: 16px;
+            row-gap: 16px;
+
+            & h3 {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .customers-section {
+        &__cards {
+            &-wrap {
+                &:last-child {
+                    & .customers-section__card-title {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+        &__card {
+            padding: 16px;
+
+            &-overlay {
+                top: 16px;
+            }
+        }
+    }
+
+    .issues-section {   
+        &__cards {
+            height: 1235px;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: repeat(12, 1fr);
+            grid-template-areas:
+            "A A A A A A A A A A A A" 
+            "A A A A A A A A A A A A" 
+            "D D D D D D E E E E E E"
+            "D D D D D D E E E E E E"
+            "F F F F F F E E E E E E"
+            "F F F F F F E E E E E E"
+            "C C C C C C H H H H H H "
+            "C C C C C C H H H H H H"
+            "C C C C C C I I I I I I"
+            "C C C C C C I I I I I I"
+            "B B B B B B G G G G G G"
+            "B B B B B B G G G G G G";
+        }
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .issues-section {
+        &__cards {
+            column-gap: 12px;
+            row-gap: 12px;
+
+            & h3 {
+                font-size: 16px;
+            }
+        }
+    }
+}

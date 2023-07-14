@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/head.html',{
+	"title":"Запит на консультацію"
+	})
+	<body class="landing consultation">
+		@@include('html/preloader.html',{})
+		@@include('html/landings-header.html',{})
+		<main class="main">
+            <section class="section header-section">
+				<div class="container header-section__container">
+					<div class="row">
+					  <div class="header-section__title col-12 d-flex justify-content-center align-items-center text-center">
+						<h1><img class="header-section__title-img" src="./img/logo-blue.svg" alt="Logo">сучасна система кадрових рішень</h1>
+					  </div>
+					</div>
+					<div class="row">
+						<div class="header-section__desc col-12 d-flex align-items-center flex-column text-center">
+							<p>Лише користувачі системи мають змогу отримувати консультації згідно зі своїм пакетом послуг</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="header-section__buttons col-12 d-flex justify-content-center">
+							<button class="header-section__button btn blue-main js-open-modal" data-modal="2" type="button">Стати користувачем системи</button>
+						</div>
+					</div>
+					<div class="row">
+						<div class="header-section__img col-12">
+							<img src="./img/header-section.png" width="1272" alt="Working people">
+						</div>
+					</div>
+				  </div>
+			</section>
+			<section class="section issues-section">
+				<div class="container issues-section__container">
+					<div class="row">
+						<div class="col-12">
+							<h3 class="issues-section__title mb-3">Якщо ви</h3>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 mb-4">
+							<ul class="issues-section__list">
+								<li><h4>керівник підприємства,</h4></li>
+								<li><h4>начальник відділу кадрів,</h4></li>
+								<li><h4>начальник служби управління персоналом,</h4></li>
+								<li><h4>менеджер з персоналу,</h4></li>
+								<li><h4>інспектор з кадрів,</h4></li>
+								<li><h4>фахівець з кадрового адміністрування,</h4></li>
+								<li><h4>бухгалтер,</h4></li>
+								<li><h4>інший представник роботодавця, то...</h4></li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<h2 class="issues-section__title mb-4">Можете отримати консультацію з таких питань:</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<ul class="issues-section__cards">
+								<li class="issues-section__card">
+									<h3>Загальнообовʼязкового державного соціального страхування</h3>
+								</li>
+								<li class="issues-section__card">
+									<h3>Прийняття та звільнення працівників</h3>
+								</li>
+								<li class="issues-section__card">
+									<h3>Організації трудових відносин</h3>
+								</li>
+								<li class="issues-section__card">
+									<h3>Застосування законодавства про працю</h3>
+								</li>
+								<li class="issues-section__card">
+									<h3>Кількісного та якісного обліку персоналу</h3>
+								</li>
+								<li class="issues-section__card">
+									<h3>Військового обліку</h3>
+								</li>
+								<li class="issues-section__card">
+									<h3>Кадрового діловодства</h3>
+								</li>
+								<li class="issues-section__card">
+									<h3>Відповідальності за порушення законодавства про працю</h3>
+								</li>
+								<li class="issues-section__card">
+									<h3>Звітності персоналу</h3>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section access-section">
+				<div class="container access-section__container">
+					<div class="row">
+						<div class="col">
+							<div class="access-section__wrapper">
+								<h3 class="access-section__title text-center mr-auto ml-auto">Переконайтеся в цьому, ставши користувачем системи!</h3>
+								<button class="access-section__button btn blue-main d-block mr-auto ml-auto mt-4 js-open-modal" data-modal="2" type="button">Стати користувачем системи</button>								
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section customers-section">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<h2 class="customers-section__title text-center mb-4">Хто наші клієнти?</h2>
+						</div>
+					</div>
+					<div class="row customers-section__cards">
+						<div class="customers-section__cards-wrap col-6 col-md-4 mb-4">
+							<div class="customers-section__card">
+								<div class="customers-section__card-overlay">
+								</div>
+								<svg class="customers-section__card-icon" width="32" height="32">
+									<use href="./img/icons.svg#customer-1"></use>
+								</svg>
+								<h5 class="customers-section__card-title">Комерційні підприємства</h5>
+							</div>
+						</div>
+						<div class="customers-section__cards-wrap col-6 col-md-4 mb-4">
+							<div class="customers-section__card">
+								<div class="customers-section__card-overlay">
+								</div>
+								<svg class="customers-section__card-icon" width="32" height="32">
+									<use href="./img/icons.svg#customer-2"></use>
+								</svg>
+								<h5 class="customers-section__card-title">Державні органи</h5>
+							</div>
+						</div>
+						<div class="customers-section__cards-wrap col-6 col-md-4 mb-4">
+							<div class="customers-section__card">
+								<div class="customers-section__card-overlay">
+								</div>
+								<svg class="customers-section__card-icon" width="32" height="32">
+									<use href="./img/icons.svg#customer-3"></use>
+								</svg>
+								<h5 class="customers-section__card-title">Органи місцевого самоврядування</h5>
+							</div>
+						</div>
+						<div class="customers-section__cards-wrap col-6 col-md-4 mb-4 mb-md-0">
+							<div class="customers-section__card">
+								<div class="customers-section__card-overlay">
+								</div>
+								<svg class="customers-section__card-icon" width="32" height="32">
+									<use href="./img/icons.svg#customer-4"></use>
+								</svg>
+								<h5 class="customers-section__card-title">Заклади освіти</h5>
+							</div>
+						</div>
+						<div class="customers-section__cards-wrap col-6 col-md-4">
+							<div class="customers-section__card">
+								<div class="customers-section__card-overlay">
+								</div>
+								<svg class="customers-section__card-icon" width="32" height="32">
+									<use href="./img/icons.svg#customer-5"></use>
+								</svg>
+								<h5 class="customers-section__card-title">Медичні установи</h5>
+							</div>
+						</div>
+						<div class="customers-section__cards-wrap col-6 col-md-4">
+							<div class="customers-section__card">
+								<div class="customers-section__card-overlay">
+								</div>
+								<svg class="customers-section__card-icon" width="32" height="32">
+									<use href="./img/icons.svg#customer-6"></use>
+								</svg>
+								<h5 class="customers-section__card-title">Підприємства з будь-якою формою власності та кількістю працівників</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section experts-section">
+				<div class="container experts-section__container">
+					<div class="row">
+						<div class="col-8">
+							<h2>Вас консультують</h2>
+						</div>
+						<div class="col-4 d-flex justify-content-end">
+							<div class="swiper-buttons d-flex justify-content-between">
+								<div class="swiper-button-prev d-block">
+									<svg class="experts-section__phone-icon" width="32" height="32">
+										<use href="./img/icons.svg#prev-icon"></use>
+									</svg>
+								</div>
+								<div class="swiper-button-next d-block">
+									<svg class="experts-section__phone-icon" width="32" height="32">
+										<use href="./img/icons.svg#next-icon"></use>
+									</svg>
+								</div>   
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<div class="swiper">
+								<div class="swiper-wrapper">
+								  <!-- Slides -->
+									<div class="swiper-slide">
+										<img src="../img/snisar.jpg" alt="Карина Снісар" width="410">
+										<div class="experts-section__overlay">
+											<h4 class="experts-section__overlay-title">Карина Снісар</h4>
+											<p class="experts-section__overlay-desc">Експерт проєктів «КАДРОВИК.UA» в галузі трудового права та кадрового діловодства з практичним досвідом роботи кадровиком</p>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<img src="../img/vynnychuk.png" alt="Марʼяна Винничук" width="410">
+										<div class="experts-section__overlay">
+											<h4 class="experts-section__overlay-title">Марʼяна Винничук</h4>
+											<p class="experts-section__overlay-desc">Експерт проєктів «КАДРОВИК.UA» Юрист за спеціальністю. Працювала юрисконсультом, начальником юридичного відділу, начальником відділу кадрів. Мала досвід роботи з отриманням дозвільних документів, проведенням публічних торгів, співпраці та взаємодії з органами державної влади.</p>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<img src="../img/drozdovska.jpg" alt="Наталія Лукьянчук" width="410">
+										<div class="experts-section__overlay">
+											<h4 class="experts-section__overlay-title">Віталіна Дроздовська</h4>
+											<p class="experts-section__overlay-desc">Eксперт Академії Трудових Відносин, юрист в галузі трудового законодавства, кадровик зі стажем із 2004 року (18 років)</p>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<img src="../img/lukianchuk.png" alt="Наталія Лукьянчук" width="410">
+										<div class="experts-section__overlay">
+											<h4 class="experts-section__overlay-title">Наталія Лукьянчук</h4>
+											<p class="experts-section__overlay-desc">Начальник відділу кадрів ТОВ «Конверс Лінкс», автор журналу «КАДРОВИК.UA»</p>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<img src="../img/zhakun.png" alt="Тетяна Жакун" width="410">
+										<div class="experts-section__overlay">
+											<h4 class="experts-section__overlay-title">Тетяна Жакун</h4>
+											<p class="experts-section__overlay-desc">Перший заступник директора департаменту правової політики та якості Херсонської міської ради</p>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<img src="../img/kravtsov.jpg" alt="Сергій Кравцов" width="410">
+										<div class="experts-section__overlay">
+											<h4 class="experts-section__overlay-title">Сергій Кравцов</h4>
+											<p class="experts-section__overlay-desc">Завідувач відділу з наукового забезпечення питань гендерної політики НДІ соціальної політики Мінсоцполітики та НАН України, доктор філософії</p>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<img src="../img/tsymbaliuk.jpg" alt="Світлана Цимбалюк" width="410">
+										<div class="experts-section__overlay">
+											<h4 class="experts-section__overlay-title">Світлана Цимбалюк</h4>
+											<p class="experts-section__overlay-desc">Декан факультету управління персоналом, соціології та психології ДВНЗ «КНЕУ», докт. екон. наук</p>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<img src="../img/vasyliova.jpg" alt="Зоя Васильова" width="410">
+										<div class="experts-section__overlay">
+											<h4 class="experts-section__overlay-title">Зоя Васильова</h4>
+											<p class="experts-section__overlay-desc">Юрист, експерт із трудового права.</p>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<img src="../img/krasovska.jpg" alt="Лариса Красовська" width="410">
+										<div class="experts-section__overlay">
+											<h4 class="experts-section__overlay-title">Лариса Красовська</h4>
+											<p class="experts-section__overlay-desc">Експерт із трудового права та кадрового діловодства</p>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<img src="../img/posternak.jpg" alt="Постернак Микола" width="410">
+										<div class="experts-section__overlay">
+											<h4 class="experts-section__overlay-title">Постернак Микола</h4>
+											<p class="experts-section__overlay-desc">Експерт із соціального страхування</p>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<img src="../img/bashtetskyi.jpg" alt="Євген Баштецький" width="410">
+										<div class="experts-section__overlay">
+											<h4 class="experts-section__overlay-title">Євген Баштецький</h4>
+											<p class="experts-section__overlay-desc">Начальник відділу кадрового адміністрування філії — Херсонського обласного управління АТ «Ощадбанк»</p>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<img src="../img/vasyliev.jpg" alt="Юрій Васильєв" width="410">
+										<div class="experts-section__overlay">
+											<h4 class="experts-section__overlay-title">Юрій Васильєв</h4>
+											<p class="experts-section__overlay-desc">Начальник відділу кадрів Фізико-технічного інституту низьких температур ім. Б. І. Вєркіна НАН України</p>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<img src="../img/pravdyvets.jpg" alt="Олександр Правдивець" width="410">
+										<div class="experts-section__overlay">
+											<h4 class="experts-section__overlay-title">Олександр Правдивець</h4>
+											<p class="experts-section__overlay-desc">Кандидат військових наук, доцент кафедри управління фінансово-економічною безпекою Університету економіки і права «КРОК»</p>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<img src="../img/zaritska.jpg" alt="Софія Заріцька" width="410">
+										<div class="experts-section__overlay">
+											<h4 class="experts-section__overlay-title">Софія Заріцька</h4>
+											<p class="experts-section__overlay-desc">Експерт в галузі трудового права та управління персоналом, заступник директора з управління персоналом (ПрАТ Дубенський завод ГТВ)</p>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<img src="../img/kamanova.jpg" alt="Оксана Каманова" width="410">
+										<div class="experts-section__overlay">
+											<h4 class="experts-section__overlay-title">Оксана Каманова</h4>
+											<p class="experts-section__overlay-desc">Експерт із трудового права і кадрового діловодства</p>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<img src="../img/klymenko.jpg" alt="Олександр Клименко" width="410">
+										<div class="experts-section__overlay">
+											<h4 class="experts-section__overlay-title">Олександр Клименко</h4>
+											<p class="experts-section__overlay-desc">Консультант із соціально-трудових відносин</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			@@include('html/tariff-section.html',{})
+			<section class="section faq-section" id="faq">
+				<div class="container faq-section__container">
+					<div class="row">
+						<div class="col-12">
+							<h2 class="faq-section__title">Найчастіше питають</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 col-md-6">
+							<div id="accordion" class="faq-section__accordion">
+								<div class="faq-section__card">
+								  <div class="faq-section__card-header" id="heading1">
+									  <h4 class="faq-section__question" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+										Чи можу я придбати доступ лише до консультацій експертів?
+									  </h4>
+								  </div>                
+								  <div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#accordion">
+									<div class="faq-section__card-body">
+										Відповідь на стандартні запитання ви отримаєте від однієї години до однієї доби. Складні запитання, що потребують обговорення експертів чи звернень до державних структур, надсилаються протягом 3 днів, про що ви будете попереджені додатково.
+									</div>
+								  </div>
+								</div>
+								<div class="faq-section__card">
+								  <div class="faq-section__card-header" id="heading2">
+									  <h4 class="faq-section__question collapsed" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+										Скільки запитань на місяць можна поставити експерту?
+									  </h4>
+								  </div>
+								  <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordion">
+									<div class="faq-section__card-body">
+										Відповідь на стандартні запитання ви отримаєте від однієї години до однієї доби. Складні запитання, що потребують обговорення експертів чи звернень до державних структур, надсилаються протягом 3 днів, про що ви будете попереджені додатково.
+									</div>
+								  </div>
+								</div>
+								<div class="faq-section__card">
+								  <div class="faq-section__card-header" id="heading3">
+									  <h4 class="faq-section__question collapsed" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+										Як швидко я отримаю відповіді на свої запитання?
+									  </h4>
+								  </div>
+								  <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordion">
+									<div class="faq-section__card-body">
+										Відповідь на стандартні запитання ви отримаєте від однієї години до однієї доби. Складні запитання, що потребують обговорення експертів чи звернень до державних структур, надсилаються протягом 3 днів, про що ви будете попереджені додатково.
+									</div>
+								  </div>
+								</div>
+								<div class="faq-section__card">
+									<div class="faq-section__card-header" id="heading4">
+										<h4 class="faq-section__question collapsed" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+											Який робочий графік у експертів для консультацій?
+										</h4>
+									</div>                
+									<div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordion">
+									  <div class="faq-section__card-body">
+											Відповідь на стандартні запитання ви отримаєте від однієї години до однієї доби. Складні запитання, що потребують обговорення експертів чи звернень до державних структур, надсилаються протягом 3 днів, про що ви будете попереджені додатково.
+									  </div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-md-6">
+							<div id="accordion2" class="faq-section__accordion">
+								<div class="faq-section__card">
+									<div class="faq-section__card-header" id="heading5">
+										<h4 class="faq-section__question collapsed" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+											Чи відповідають експерти на всі запитання стосовно трудового законодавства?
+										</h4>
+									</div>
+									<div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordion2">
+									  <div class="faq-section__card-body">
+											Відповідь на стандартні запитання ви отримаєте від однієї години до однієї доби. Складні запитання, що потребують обговорення експертів чи звернень до державних структур, надсилаються протягом 3 днів, про що ви будете попереджені додатково.
+									  </div>
+									</div>
+								</div>
+								<div class="faq-section__card">
+									<div class="faq-section__card-header" id="heading6">
+										<h4 class="faq-section__question collapsed" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+											Чи можна відповіді експертів роздрукувати, щоб на них посилатися на робочих нарадах?
+										</h4>
+									</div>
+									<div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#accordion2">
+									  <div class="faq-section__card-body">
+										  Відповідь на стандартні запитання ви отримаєте від однієї години до однієї доби. Складні запитання, що потребують обговорення експертів чи звернень до державних структур, надсилаються протягом 3 днів, про що ви будете попереджені додатково.
+									  </div>
+									</div>
+								</div>
+								<div class="faq-section__card">
+									<div class="faq-section__card-header" id="heading7">
+										<h4 class="faq-section__question collapsed" data-toggle="collapse" data-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+											Хто є розробником системи та гарантом якості обслуговування?
+										</h4>
+									</div>
+									<div id="collapse7" class="collapse" aria-labelledby="heading7" data-parent="#accordion2">
+									  <div class="faq-section__card-body">
+											Відповідь на стандартні запитання ви отримаєте від однієї години до однієї доби. Складні запитання, що потребують обговорення експертів чи звернень до державних структур, надсилаються протягом 3 днів, про що ви будете попереджені додатково.
+									  </div>
+									</div>
+								</div>
+								<div class="faq-section__card">
+									<div class="faq-section__card-header" id="heading8">
+										<h4 class="faq-section__question collapsed" data-toggle="collapse" data-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+											Чи консультують в системі представники державних структур та інші залучені експерти?
+										</h4>
+									</div>
+									<div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#accordion2">
+									  <div class="faq-section__card-body">
+										  Відповідь на стандартні запитання ви отримаєте від однієї години до однієї доби. Складні запитання, що потребують обговорення експертів чи звернень до державних структур, надсилаються протягом 3 днів, про що ви будете попереджені додатково.
+									  </div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			@@include('html/form-section.html',{})
+
+		</main>
+		@@include('html/footer.html',{})
+		@@include('html/to-top-arrow.html',{})
+		@@include('html/become-user-modals.html',{})
+		<div class="overlay js-overlay-modal"></div>
+
+		@@include('html/script-links.html',{})
+		<script src="js/app.min.js"></script>
+	</body>
+</html>
